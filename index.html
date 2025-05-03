@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+  .. module:: index
+  .. summary:: Home page of the portfolio
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Matthew Dobley Portfolio</title>  <!-- Changed Code: Updated title -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="d-flex">
+    <nav id="sidebar">
+      <!-- Sphinx: Sidebar navigation for all pages -->
+      <div class="sidebar-header">
+        <h3>My Portfolio</h3>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main id="content">
+      <!--
+      .. section:: introduction
+         :description: Detailed bio with professional highlights and leadership experience.
+      -->
+      <section id="intro" class="text-center">
+        <!--
+        .. image:: assets/images/avatar.jpg
+           :alt: Professional photo of Matthew Dobley
+           :class: rounded-circle img-fluid avatar
+        -->
+        <img src="assets/images/avatar.jpg" alt="Matthew Dobley" class="rounded-circle img-fluid avatar mb-3" style="width:20%; height:auto;" />  <!-- Changed Code: Scale avatar to 20% -->
+        <!--
+        .. tagline:: "Turning data into actionable insights with AI-driven solutions."
+        -->
+        <h2 class="mb-3">Turning data into actionable insights with AI-driven solutions.</h2>
+        <p>Hello! I’m Matthew Dobley, a Generative AI Solutions Developer with a strong foundation in computer science and software engineering. Specializing in end-to-end MLOps, CI/CD, and LangGraph pipelines, I design and implement microservices that leverage GPT-4o and container orchestration to deliver high-performance AI-driven solutions. My technical toolkit includes Docker, Railway, AWS EKS, and modern web frameworks, enabling me to build reliable, scalable architectures from prototype to production.</p>
+        <p>During my academic tenure at California State University, Fullerton, where I’m on track to complete my B.S. in Computer Science by December 2025, I led a team to develop an AI-powered course recommendation engine. We built a LangGraph-directed acyclic graph (DAG) that stringifies course metadata, calls the LLM, parses structured JSON output, and persists results to a SQLite database. By integrating synthetic testing and prompt engineering, we achieved zero runtime parsing errors across fifty-plus test runs and reduced unit test latency by 90%.</p>
+        <p>In professional internships, I applied these principles at a leading technology firm, where I containerized machine learning models in Docker, orchestrated CI/CD pipelines with GitHub Actions, and deployed microservices to Railway and AWS EKS. My contributions improved service reliability by 30%, decreased deployment times by 50%, and enhanced system observability with structured logging and automated alerts. I collaborated cross-functionally with data scientists, DevOps engineers, and product managers to ensure seamless integration and rapid iteration on features in agile sprints.</p>
+        <p>As a proud Eagle Scout of the Boy Scouts of America, I completed a rigorous merit badge program and demonstrated leadership through community service and outdoor expeditions. I organized and led a fifteen-member crew on a week-long, fifty-mile backpacking expedition across the Sierra Nevada, where I managed logistics, safety planning, and team training. This experience instilled resilience, strategic planning skills, and a commitment to mentorship as I guided junior scouts in navigation, wilderness survival, and collaborative problem-solving under challenging conditions.</p>
+        <p>Leadership continues to shape my approach in software development projects: I foster inclusive environments by mentoring junior developers, conducting weekly code reviews, and documenting best practices for Sphinx-generated documentation. I advocate for clear communication and structured workflows, championing agile ceremonies such as sprint planning, daily stand-ups, and retrospectives to align teams on goals and continuously improve processes. My passion for teaching led me to volunteer as a coding tutor for local high school students, sharing insights on algorithms, data structures, and problem-solving strategies.</p>
+        <p>I’m driven by a passion for exploring emerging technologies: from implementing retrieval-augmented generation (RAG) with vector embeddings to architecting scalable Kubernetes clusters on AWS EKS, I continually seek to push the boundaries of what AI systems can achieve. I leverage synthetic testing frameworks to isolate and validate individual pipeline components, ensuring quality and robustness before integration. This dedication to innovation ensures that every solution I build meets the highest standards of performance and accuracy.</p>
+        <p>When I’m not designing AI workflows or optimizing CI/CD pipelines, I enjoy backpacking in the wilderness, where I apply my project management skills to plan routes, assess risks, and adapt to changing conditions. I also contribute to open-source projects, writing documentation and code examples to help developers adopt new tools. These experiences reinforce my belief in lifelong learning, teamwork, and the positive impact of technology on our communities.</p>
+        <p>Let’s collaborate to transform data into actionable insights. Whether you’re building AI microservices, scaling MLOps pipelines, or architecting next-generation intelligent applications, I’m ready to bring leadership, technical expertise, and a commitment to excellence to your team.</p>
+        <a href="contact.html" class="btn btn-primary mt-3">Get in Touch</a>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
