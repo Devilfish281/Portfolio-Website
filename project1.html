@@ -1,0 +1,66 @@
+<!-- project1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Elective Advisor | Project Details</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container py-5">
+    <a href="projects.html" class="btn btn-link mb-4">← Back to Projects</a>
+    <h1 class="mb-3">Smart Elective Advisor</h1>
+    <p class="lead">A comprehensive AI-driven tool for recommending elective courses to Computer Science students.</p>
+
+    <h2>Description</h2>
+    <p>
+      This project implements a LangGraph-based DAG pipeline that stringifies course metadata, calls GPT-4o, parses structured JSON output, and stores recommendations in a SQLite database. A Tkinter GUI provides an intuitive interface for login, preference selection, and live recommendation generation.
+    </p>
+
+    <h2>Screenshots</h2>
+    <div class="row g-3 mb-4">
+      <div class="col-md-6"><img src="assets/images/project1-screenshot.png" class="img-fluid rounded" alt="GUI Screenshot"></div>
+      <!-- Add more screenshots here -->
+    </div>
+
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>Python &mdash; Core language</li>
+      <li>LangGraph &mdash; Workflow orchestration</li>
+      <li>SQLite &mdash; Persistent storage</li>
+      <li>Tkinter &mdash; Desktop GUI</li>
+      <li>OpenAI GPT-4o &mdash; AI recommendation engine</li>
+      <li>Poetry — Dependency &amp; virtual environment management</li>
+    </ul>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Secure user registration &amp; authentication (bcrypt hashed passwords)</li>
+      <li>Cascading dropdowns for college, department, degree & job preferences</li>
+      <li>Real-time AI-powered course recommendations</li>
+      <li>Persistence of user preferences and recommendations in database</li>
+    </ul>
+
+    <h2>Challenges & Solutions</h2>
+    <ul>
+      <li><strong>DAG Pipeline Robustness:</strong> Implemented extensive synthetic testing to catch parsing errors, achieving zero runtime failures.</li>
+      <li><strong>GUI Responsiveness:</strong> Used Tkinter frames and async calls to prevent UI blocking during AI requests.</li>
+      <li><strong>Data Integrity:</strong> Enforced sqlite foreign-keys and manual rollback on errors.</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>
+      Delivered a fully functional desktop application with end-to-end AI workflows, reducing recommendation latency by 50% and improving user satisfaction through a clean, intuitive interface.
+    </p>
+
+    <a href="https://github.com/Devilfish281/class_elective_advisor" target="_blank" class="btn btn-primary">View Code on GitHub</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -12,7 +12,19 @@
 </head>
 <body>
   <div class="d-flex">
-    <nav id="sidebar">
+    <!-- Hamburger toggle button -->
+    <button
+      id="hamburger"
+      class="hamburger-icon"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+    >
+      ☰
+    </button>
+
+    <!-- Sidebar / nav-menu -->
+    <nav id="nav-menu" class="sidebar nav-menu" role="navigation" aria-hidden="true">
       <div class="sidebar-header">
         <h3>My Portfolio</h3>
       </div>
@@ -24,33 +36,105 @@
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- Main content -->
     <main id="content" class="p-4">
       <h1>Skills</h1>
 
-      <section id="technical">
+      <!-- Technical Skills Grid -->
+      <section id="technical" class="mb-5">
         <h2>Technical Skills</h2>
-        <ul class="list-group mb-4">
-          <li class="list-group-item">Specialized in LangGraph pipelines for LLM microservice orchestration</li>
-          <li class="list-group-item">Expert in prompt engineering and JSON parsing for reliable LLM output</li>
-          <li class="list-group-item">Experienced with GPT‑4o in AI-driven recommendation microservices</li>
-          <li class="list-group-item">Strategic CI/CD automation using Docker, GitHub Actions, and Railway</li>
-          <li class="list-group-item">Passionate about building scalable MLOps workflows for AI solutions</li>
-          <li class="list-group-item">Skilled in Python and C++ for full-stack AI systems and ETL automation</li>
-          <li class="list-group-item">Track record of zero-error parsing via synthetic testing in CI pipelines</li>
-          <li class="list-group-item">Innovative use of LangChain and FastAPI to deploy AI via RESTful endpoints</li>
-        </ul>
+        <!-- Bootstrap grid: two-column on md+, single on sm -->
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Specialized in LangGraph pipelines for LLM microservice orchestration</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Expert in prompt engineering and JSON parsing for reliable LLM output</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Experienced with GPT-4o in AI-driven recommendation microservices</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Strategic CI/CD automation using Docker, GitHub Actions, and Railway</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Passionate about building scalable MLOps workflows for AI solutions</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Skilled in Python and C++ for full-stack AI systems and ETL automation</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Track record of zero-error parsing via synthetic testing in CI pipelines</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Innovative use of LangChain and FastAPI to deploy AI via RESTful endpoints</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <!-- Non-Technical Skills Grid -->
       <section id="non-technical">
         <h2>Non-Technical Skills</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Proven leadership from Eagle Scout to leading agile development sprints</li>
-          <li class="list-group-item">Effective communicator with mentorship and Sphinx documentation experience</li>
-          <li class="list-group-item">Backpacking expertise with Eagle Scout resilience and risk management</li>
-        </ul>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Proven leadership from Eagle Scout to leading agile development sprints</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Effective communicator with mentorship and Sphinx documentation experience</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm p-3">
+              <div class="card-body">
+                <p class="mb-0">Backpacking expertise with Eagle Scout resilience and risk management</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
