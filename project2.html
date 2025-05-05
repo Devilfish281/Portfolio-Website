@@ -1,0 +1,99 @@
+<!-- project2.html --> 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Portfolio Website | Project Details</title> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" /> 
+  <link rel="stylesheet" href="css/styles.css" /> 
+</head> 
+<body> 
+  <main id="page" class="page"> 
+    <div class="container py-5"> 
+      <a href="projects.html" class="btn btn-link mb-4">← Back to Projects</a> 
+      <h1 class="mb-3">Portfolio Website</h1> 
+      <p class="lead">A fully responsive, accessible, and interactive personal website for showcasing academic achievements, AI engineering projects, leadership, and skills. Built with modern front-end technologies, the site integrates smooth transitions, mobile-friendly navigation, and real-time contact handling.</p> 
+
+      <h2>Description</h2> 
+      <p>The Portfolio Website is a single-page application-style portfolio built using HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. The website consists of multiple modular sections: Home, About, Projects, Skills, and Contact. Each page integrates accessibility best practices (ARIA roles and attributes), clean UI architecture using Flexbox/Grid, and smooth animated transitions driven by CSS and JavaScript event listeners.</p> 
+      <p>The codebase supports dynamic routing animations via transitionend, and localStorage remembers the menu state across refreshes. The contact.html form integrates with a custom Express.js backend (server.js) to log and simulate message handling through an API call.</p> 
+      <p>JavaScript is structured with Sphinx-style documentation blocks and adheres to a modular, readable format that separates responsibilities (DOM manipulation, transitions, and API interaction). The project supports real-time navigation using client-side animations and progressive enhancement for mobile compatibility.</p> 
+
+      <h2>Screenshots</h2> 
+
+
+
+      <div class="row g-4 mt-3"> 
+        <div class="col-md-6"> 
+          <h3 class="h5">Home View</h3> 
+          <img src="assets/images/project2-screenshot.png" class="img-fluid rounded mb-4" alt="Portfolio Website Screenshot Home" /> 
+        </div> 
+        <div class="col-md-6"> 
+          <h3 class="h5">About View</h3> 
+          <img src="assets/images/project2-2-screenshot.png" class="img-fluid rounded mb-4" alt="Portfolio Website Screenshot About" /> 
+        </div> 
+        <div class="col-md-6"> 
+          <h3 class="h5">Projects View</h3> 
+          <img src="assets/images/project2-3-screenshot.png" class="img-fluid rounded mb-4" alt="Portfolio Website Screenshot Projects" /> 
+        </div> 
+        <div class="col-md-6"> 
+          <h3 class="h5">Skills View</h3> 
+          <img src="assets/images/project2-4-screenshot.png" class="img-fluid rounded mb-4" alt="Portfolio Website Screenshot Skills" /> 
+        </div> 
+        <div class="col-md-6"> 
+          <h3 class="h5">Contact View</h3> 
+          <img src="assets/images/project2-5-screenshot.png" class="img-fluid rounded mb-4" alt="Portfolio Website Screenshot Contact" /> 
+        </div> 
+      </div> 
+
+
+      <h2>Technologies Used</h2> 
+      <ul> 
+        <li>HTML5 & CSS3 — Semantic structure and responsive design with custom styling</li> 
+        <li>Bootstrap 5 — Component library for layout, spacing, and forms</li> 
+        <li>JavaScript (ES6+) — Core logic for transitions, events, animations, and form handling</li> 
+        <li>Flexbox & CSS Grid — Responsive layout and alignment</li> 
+        <li>Express.js — Lightweight backend for handling contact form POST requests</li> 
+        <li>Sphinx-style Comments — Code documentation for maintainability</li> 
+        <li>ARIA Attributes — Enhanced accessibility for navigation and menus</li> 
+      </ul> 
+
+      <h2>Features</h2> 
+      <ul> 
+        <li>Responsive Sidebar Navigation — Hamburger menu toggles on mobile view; sidebar remains accessible and persistent.</li> 
+        <li>Client-Side Flip Animation — Pages such as projects.html and project1.html flip using rotateY transitions during navigation. Controlled by main.js using transitionend.</li> 
+        <li>Smooth Enter/Exit Transitions — CSS classes like page-enter and page-exit are toggled via JavaScript to animate full-page views.</li> 
+        <li>Contact Form Handling — contact.html sends a POST request to /api/contact; error handling and success notifications are managed via fetch() with async/await.</li> 
+        <li>Persistent UI State with localStorage — Mobile menu remembers its open/closed state across sessions.</li> 
+        <li>Accessibility Enhancements — ARIA labels and roles added to menu, nav, and buttons for screen reader compatibility.</li> 
+        <li>Sphinx-Style JS Documentation — Every logical section in main.js includes header-style docstrings to outline intent and structure.</li> 
+        <li>Skills and Projects Showcased — Reusable card components list technologies, tools, and outcomes from major projects, including the Smart Elective Advisor.</li> 
+      </ul> 
+
+      <h2>Challenges & Solutions</h2> 
+      <ul> 
+        <li>Transition Coordination — Implemented transitionend listeners with requestAnimationFrame() to ensure animations complete before redirection, avoiding broken flip animations and white flash artifacts.</li> 
+        <li>Accessibility with Dynamic Elements — Used aria-expanded, aria-hidden, and proper role attributes to ensure full keyboard and screen reader support for mobile nav.</li> 
+        <li>Mobile Responsiveness — Customized Bootstrap with CSS Grid for a better column layout on narrow screens; integrated @media queries to hide/show elements appropriately.</li> 
+        <li>Page Load Animation Syncing — Managed popstate and pageshow events to replay animations when users click the Back button.</li> 
+        <li>Form UX & Robustness — Integrated robust validation and error feedback for form submission, complete with error logging for backend failures.</li> 
+      </ul> 
+
+      <h2>Outcome</h2> 
+      <p>Delivered a highly polished, fully accessible personal branding website with:</p> 
+      <ul> 
+        <li>🔄 Fluid flip animation between major pages (projects.html ⇌ project1.html)</li> 
+        <li>🧠 Clear representation of AI engineering and academic achievements</li> 
+        <li>📱 Optimized mobile navigation and contact form</li> 
+        <li>📢 Integrated Express server to handle form POST requests</li> 
+        <li>🗂️ Maintained clean, scalable, and well-documented code across HTML, CSS, and JS</li> 
+      </ul> 
+
+      <a href="https://github.com/Devilfish281/Portfolio-Website" target="_blank" class="btn btn-primary mt-4">View Code on GitHub</a> 
+    </div> 
+  </main> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="js/main.js"></script> 
+</body> 
+</html> 
